@@ -1,0 +1,44 @@
+
+Objective:
+    - Web application to display live logs
+    - Any changes made by users in the log file should be displayed in the application so that management can see those logs in real time
+
+
+
+
+Windows version: Get-Content test.log -Wait -Tail 10
+
+echo "test" >> test.log
+
+
+Steps: 
+Backend
+    # Create a server using Java
+    # Create a WatchService to listen to changes in log file 
+    # If something changes then notify clients 
+Frontend
+    # Create a client/website in react  
+    # When the app loads, it will fetch last 10 logs from the server 
+    # It will also reflect tha changes recived from the server 
+
+
+
+=======================
+
+Methods to monitor log file in java: https://medium.com/@ddwen/3-methods-for-monitoring-log-file-changes-in-java-e434b96046df#:~:text=The%20listener%20is%20based%20on,on%20Java%20have%20been%20introduced.    
+
+1. Sheduling task
+    - works by keeping track of version 
+    - Not highly Efficient
+2. WatchService
+    - Highly Efficient
+3. Appache Commons-IO
+    - Complex
+
+=======================
+
+Websockets in reactjs(Client): https://blog.logrocket.com/websocket-tutorial-real-time-node-react/
+
+Websockets in Java (Server): https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_a_WebSocket_server_in_Java
+    
+Sharing data using websockets (Java) - https://stackoverflow.com/questions/5680259/using-sockets-to-send-and-receive-data
