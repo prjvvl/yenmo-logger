@@ -42,3 +42,9 @@ Websockets in reactjs(Client): https://blog.logrocket.com/websocket-tutorial-rea
 Websockets in Java (Server): https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_a_WebSocket_server_in_Java
     
 Sharing data using websockets (Java) - https://stackoverflow.com/questions/5680259/using-sockets-to-send-and-receive-data
+
+http://127.0.0.1:80
+
+
+React:
+    https://www.telerik.com/blogs/websockets-react-apps
